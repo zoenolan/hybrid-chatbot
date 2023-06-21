@@ -1,2 +1,2 @@
-# hybrid-chatbot
-A hybrid rules and LLM chatbot example
+# Hybrid Chatbot
+Combining rules and LLM in a single chatbot
