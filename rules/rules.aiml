@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+  <category>
+    <pattern>HI</pattern>
+    <template>Hello there
+    </template>
+  </category>
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HEJ</pattern>
+    <template>
+      <srai>HI</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS LOVE</pattern>
+    <template>Baby don't hurt me, don't hurt me, no more.</template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS LOVE?</pattern>
+    <template>
+      <srai>WHAT IS LOVE</srai>
+    </template>
+  </category>
+
+</aiml>

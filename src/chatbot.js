@@ -1,13 +1,16 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 
 "use strict";
 
+const chatbot = require("./rules.js");
+
 class Chatbot {
-    constructor() {
+    constructor(rulesFile) {
+        this.rulesBased  = new chatbot.RulesBased(rulesFile);
     }
 
-    process(input) {  
-        return input;
+    async process(input) {  
+        return this.rulesBased.process(input);
     }  
 };
 
