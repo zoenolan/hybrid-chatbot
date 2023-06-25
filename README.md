@@ -8,4 +8,9 @@ Combining rules-based and LLM chatbots in a single application
 # Running 
 1. Run `yarn local`.
 
+# Writing new rules
+A good [AIML tutorial][aimltutorial].
+
+
 [openaiapikeys]: https://platform.openai.com/account/api-keys
+[aimltutorial]: https://www.tutorialspoint.com/aiml/index.htm
