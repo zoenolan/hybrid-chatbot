@@ -2,15 +2,30 @@
 
 "use strict";
 
-const chatbot = require("./rules.js");
+const rulesBased = require("./rules.js");
+const llmBased = require("./llm.js");
 
 class Chatbot {
-    constructor(rulesFile) {
-        this.rulesBased  = new chatbot.RulesBased(rulesFile);
+    constructor(rulesFile, openAiOrg, openAIKey) {
+        this.rulesBased = new rulesBased.RulesBased(rulesFile);
+        this.llmBased = new llmBased.LLMBased(openAiOrg, openAIKey);        
+    }
+
+    emptyReply(reply)   {   
+        const empotyReply = ((reply === "") || (reply === undefined));
+        return empotyReply;
     }
 
     async process(input) {  
-        return this.rulesBased.process(input);
+        const reply = await this.rulesBased.process(input);
+
+        if (this.emptyReply(reply)) {
+            const llmReply = await this.llmBased.process(input);
+
+            return llmReply;
+        } 
+
+        return reply;
     }  
 };
 
