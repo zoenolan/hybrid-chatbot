@@ -1,8 +1,11 @@
+// SPDX-License-Identifier: GPL-3.0
+
 "use strict";
 
 require("dotenv").config();
 
 const readline = require("readline");
+const chatbot = require("./chatbot");
 
 const rl = readline.createInterface({
   input: process.stdin,
