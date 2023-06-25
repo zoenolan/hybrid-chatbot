@@ -1,0 +1,35 @@
+{
+  "name": "bot",
+  "version": "1.3.0",
+  "description": "Chatbot application",
+  "main": "./src/chat.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "lint": "yarn eslint '**/*.{js,ts}' --fix",
+    "chat": "node ./src/chat.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joinzien/chatbot.git"
+  },
+  "keywords": [
+    "chatbot"
+  ],
+  "author": "Zoe Nolan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoenolan/hybrid-chatbot/issues"
+  },
+  "homepage": "https://github.com/zoenolan/hybrid-chatbot#readme",
+  "devDependencies": {
+    "eslint": "^8.43.0"
+  },
+  "dependencies": {
+    "aiml-high": "github:joinzien/aiml-high",
+    "dotenv": "^16.3.1",
+    "openai": "^3.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
