@@ -2,28 +2,29 @@
 
 "use strict";
 
-const openai = require("openai");
+const { Configuration, OpenAIApi } = require("openai");
 
-const model = "text-davinci-003";
+const model = "gpt-3.5-turbo";
 
 class LLMBased {
     constructor(openAiOrg, openAIKey) {
-        const configuration = new openai.Configuration({
+        const configuration = new Configuration({
             organization: openAiOrg,
             apiKey: openAIKey,
           });
-        this.llm = new openai.OpenAIApi(configuration);
+        this.llm = new OpenAIApi(configuration);
     }
 
     async process(input) {  
-        const result = await this.llm.createCompletion({
+        const result = await this.llm.createChatCompletion({
             model,
-            max_tokens: 1024,
-            prompt: input,
+            messages: [
+              { role: "user", content: input },
+            ],
           });
         
-          const response = result.data.choices[0].text;
-          return response;
+        const response = result.data.choices[0].message.content;
+        return response;
     }  
 };
 
