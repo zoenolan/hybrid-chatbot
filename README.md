@@ -6,7 +6,7 @@ Combining rules-based and LLM chatbots in a single application
 2. Copy `env.example` to `.env` and fill in the [OpenAI API keys][openaiapikeys]
 
 # Running 
-1. Run `yarn local`.
+1. Run `yarn chat`.
 
 # Writing new rules
 A good [AIML tutorial][aimltutorial].
