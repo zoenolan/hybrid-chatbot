@@ -13,7 +13,10 @@
     "url": "git@github.com:joinzien/hybrid-chatbot.git"
   },
   "keywords": [
-    "chatbot", "aiml", "openai", "llm"
+    "chatbot",
+    "aiml",
+    "openai",
+    "llm"
   ],
   "author": "Zoe Nolan",
   "license": "MIT",
