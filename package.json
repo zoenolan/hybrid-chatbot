@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/zoenolan/hybrid-chatbot#readme",
   "devDependencies": {
-    "eslint": "^8.47.0"
+    "eslint": "^8.48.0"
   },
   "dependencies": {
     "aiml-high": "github:joinzien/aiml-high",
