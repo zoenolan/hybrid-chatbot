@@ -39,9 +39,8 @@ const isExitString = function (input) {
 async function main() {
   console.log("\n Use 'quit' or 'exit' to leave the bot\n");
 
-  const openAiOrg = process.env.OPENAI_ORG;
   const openAIKey = process.env.OPENAI_API_KEY;
-  const bot = new chatbot.Chatbot(rulesFile, openAiOrg, openAIKey);
+  const bot = new chatbot.Chatbot(rulesFile, openAIKey);
 
   let done = false;
   while (!done) {
