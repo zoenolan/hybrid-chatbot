@@ -6,9 +6,9 @@ const rulesBased = require("./rules.js");
 const llmBased = require("./llm.js");
 
 class Chatbot {
-    constructor(rulesFile, openAiOrg, openAIKey) {
+    constructor(rulesFile, openAIKey) {
         this.rulesBased = new rulesBased.RulesBased(rulesFile);
-        this.llmBased = new llmBased.LLMBased(openAiOrg, openAIKey);        
+        this.llmBased = new llmBased.LLMBased(openAIKey);        
     }
 
     emptyReply(reply)   {   
