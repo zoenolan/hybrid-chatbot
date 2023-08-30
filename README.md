@@ -1,5 +1,5 @@
 # Hybrid Chatbot
-Combining rules-based and LLM chatbots in a single application
+Combining rules-based and LLM chatbots in a single application example to support my [blog post][hybridchatbot]
 
 ## Installation
 1. Run `yarn install`.
@@ -11,6 +11,6 @@ Combining rules-based and LLM chatbots in a single application
 ## Writing new rules
 A good [AIML tutorial][aimltutorial].
 
-
+[hybridchatbot]: https://zoenolan.org/2023/08/combining-an-llm-and-a-rules-based-chatbot/
 [openaiapikeys]: https://platform.openai.com/account/api-keys
 [aimltutorial]: https://www.tutorialspoint.com/aiml/index.htm
